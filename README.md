@@ -6,12 +6,6 @@
 
 SONGS Protocol integrates Arweave and AR.IO technologies to create a permanent, decentralized platform for music distribution and monetization. This repository contains the implementation of storage integrations, token-gating mechanisms, and artist microsites.
 
-## 🔥 Arweave Registry
-
-| Content | TXID | Gateway Links |
-|---------|------|--------------|
-| Documentation Snapshot | _TBD_ | [arweave.net](https://arweave.net/_TBD_), [ar-io.dev](https://ar-io.dev/_TBD_) |
-| Demo Video M1 | _TBD_ | [arweave.net](https://arweave.net/_TBD_), [ar-io.dev](https://ar-io.dev/_TBD_) |
 
 ## Repository Structure
 
@@ -54,9 +48,7 @@ We maintain a [collection of weekly discovery documents](./docs/weeklies) that c
 - Valuable insights for developers new to the project
 
 Current discovery topics include:
-- [Initial ArNS Exploration](./docs/weeklies/week-1-initial-arns-exploration.md)
-- [Astro Framework Prototyping](./docs/weeklies/week-2-astro-prototyping.md)
-- [Artist Data Schema Design](./docs/weeklies/week-3-data-schema-design.md)
+- [Week 1 Initial Setup and Full Docs Mapping](./docs/weeklies/week-1.md)
 
 ### Architecture Decisions
 
@@ -70,28 +62,8 @@ For formal design decisions, see the [Architecture Decision Records](./adr) (ADR
 - **Contracts**: ERC-1155 for token-gated content
 - **Front-end**: React hooks, Astro for artist sites
 
-## Getting Started
-
-### Prerequisites
-- Node.js 18+
-- [ArConnect](https://arconnect.io) wallet with AR tokens
-- [everPay](https://everpay.io) for fast AR ↔ USDC top-ups
-
-### Installation
-
-```bash
-# Install Turbo CLI
-npm i -g @turbo/cli
-
-# Clone repository
-git clone https://github.com/songs-protocol/arweave-storage.git
-cd arweave-storage
-
-# Install dependencies
-npm install
-```
-
-## Milestones
+## Milestones 
+#### Milestones to develop during the exploration
 
 This project is being implemented in 5 key milestones:
 
