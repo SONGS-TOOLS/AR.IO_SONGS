@@ -1,0 +1,55 @@
+{
+  "name": "songs-protocol-arweave",
+  "version": "0.1.0",
+  "description": "SONGS Protocol Arweave/AR.IO integration",
+  "private": true,
+  "workspaces": [
+    "packages/*",
+    "services/*",
+    "cli"
+  ],
+  "scripts": {
+    "lint": "eslint .",
+    "lint:docs": "markdownlint **/*.md",
+    "adr:new": "node scripts/create-adr.js",
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "test": "turbo run test",
+    "publish-packages": "turbo run build lint test && changeset publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/songs-protocol/arweave-storage.git"
+  },
+  "keywords": [
+    "arweave",
+    "ar.io",
+    "music",
+    "nft",
+    "token-gating",
+    "permaweb"
+  ],
+  "author": "gordo@songs-tools.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/songs-protocol/arweave-storage/issues"
+  },
+  "homepage": "https://github.com/songs-protocol/arweave-storage#readme",
+  "devDependencies": {
+    "@changesets/cli": "^2.26.0",
+    "@typescript-eslint/eslint-plugin": "^5.59.0",
+    "@typescript-eslint/parser": "^5.59.0",
+    "eslint": "^8.38.0",
+    "eslint-config-prettier": "^8.8.0",
+    "markdownlint-cli": "^0.33.0",
+    "prettier": "^2.8.7",
+    "turbo": "^1.9.3",
+    "typescript": "^5.0.4"
+  },
+  "dependencies": {
+    "@turbo/sdk": "^1.0.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+} 
